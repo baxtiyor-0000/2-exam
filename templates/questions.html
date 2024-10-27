@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responses</title>
+</head>
+<body>
+    <h1>Responses</h1>
+    <ul>
+        {% for user in questions %}
+            <li>{{ user.name }} {{ user.email }} {{ user.question }}</li>
+        {% endfor %}
+    </ul><br>
+    <a href="/">Submit another question</a>
+</body>
+</html>

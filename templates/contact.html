@@ -1,0 +1,9 @@
+<title>Quick Question Form</title>
+<h1>Quick Question Form</h1>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <div class="form-actions">
+    <button type="submit">Submit</button>
+  </div>
+</form>
